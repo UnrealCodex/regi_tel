@@ -46,7 +46,9 @@ esc,
 region,
 asunto,
 muni,
-refe
+refe,
+fide,
+cono
 ) values (
 '".$reg_by."',
 '".$fecha_reg."',
@@ -57,7 +59,9 @@ refe
 '".$region."',
 '".$asunto."',
 '".$muni."',
-'".$refe."'
+'".$refe."',
+'".$fide."',
+'".$cono."'
 )") ;/*MUESTRA UN MENSAJE DE ERROR EN CASO DE QUE ALGO VALLA MAL*/ 
 
 	
