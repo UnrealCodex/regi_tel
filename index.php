@@ -109,22 +109,32 @@ select{
 	
 	<li><label>Full Fecha Registro: <span class="required">*</span></label><input type="date" name="fecha_reg"><br></li>
 	Nombre de quien Llamo:<br>
-		<input type="text" name="nom_usr"><br>
+		<input name="nom_usr" type="text" size="100"><br>
 	Numero de Empleado:<br>
 		<input type="text" name="no_emp"><br>
 	Numero de Telefono:<br>
 		<input type="text" name="num_tel"><br>
-	Referencia:<br>
-		<input type="text" name="refe"><br>
+	Fideicomiso:<br>
+	<select name="fide" id="fide">
+	  <option value="F/18902">F/18902</option>
+	  <option value="F/18903">F/18903</option>
+	</select><br>
+
 	Escuela:<br>
 		<input type="text" name="esc"><br>
 	Region:<br>
 		<input type="text" name="region"><br>
 	Municipio:<br>
 		<input type="text" name="muni"><br>
+	Referencia:<br>
+		<textarea name="refe" cols="45" rows="5"></textarea><br>
 	Asunto:<br>
-		<textarea name="asunto"></textarea><br>
-	
+		<textarea name="asunto" cols="45" rows="5"></textarea><br>
+		Conocido:<br>
+	<select name="cono" id="cono">
+	  <option value="Si">Si</option>
+	  <option value="No">No</option>
+	</select>
 	<input type="submit">
 	</form>	
 		

@@ -24,8 +24,6 @@ require_once  'conexion.php'; //conexion a la BD
 	$asunto = $_POST['asunto'];
 	$muni = $_POST['muni'];
 	$refe = $_POST['refe'];
-	$fide = $_POST['fide'];
-	$cono = $_POST['cono'];
 	
 	
 	
@@ -68,7 +66,5 @@ mysqli_close($link);
 	
 	
 	?>
-	
-	
 </body>
 </html>

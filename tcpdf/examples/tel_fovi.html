@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+	<table width="100%" border="1">
+  <tr>
+    <td><strong>Fecha:</strong>'.$reg[fecha_reg].' </td>
+    <td><strong>No.Emp:</strong>'.$reg[no_emp].'</td>
+    <td><strong>Referencia:</strong></td>
+    <td><strong>Asunto</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Nombre:</strong>'.$reg[nom_usr].'</td>
+    <td><strong>Escuela;</strong>'.$reg[esc].'</td>
+    <td rowspan="3" valign="top">'.$reg[asunto].'</td>
+    <td rowspan="3" valign="top">'.$reg[coment].'</td>
+  </tr>
+  <tr>
+    <td><strong>Tel:</strong>'.$reg[num_tel].'</td>
+    <td><strong>Municipio:</strong>'.$reg[muni].'</td>
+  </tr>
+  <tr>
+    <td><strong>Region:</strong>'.$reg[region].'</td>
+    <td>'.$reg[pregpor].'</td>
+  </tr>
+</table>
+</body>
+</html>
