@@ -91,59 +91,27 @@ $pdf->AddPage();
 
 while ($reg=mysql_fetch_array($registros))
 {
-	if($reg['fide'] == 'EDUCACION'){
 $html = '
 
 	<table width="100%" border="1">
   <tr>
-    <td colspan="2"><strong>Nombre:</strong>  '.$reg[nom_usr].' </td>
-        <td><strong>Referencia:</strong>  </td>
+    <td><strong>Fecha:</strong>  '.$reg[fecha_reg].' </td>
+    <td><strong>No.Emp:</strong>  '.$reg[no_emp].'</td>
+    <td><strong>Referencia:</strong>  </td>
     <td><strong>Asunto</strong>  </td>
   </tr>
   <tr>
-    <td><strong>No. Emp:</strong>  '.$reg[no_emp].'</td>
+    <td><strong>Nombre:</strong>  '.$reg[nom_usr].'</td>
     <td><strong>Escuela:</strong>'.$reg[esc].'</td>
     <td rowspan="3" valign="top">'.$reg[refe].'</td>
     <td rowspan="3" valign="top">'.$reg[asunto].'</td>
   </tr>
   <tr>
-    <td><strong>Fideicomiso:</strong>  '.$reg[fide].'</td>
+    <td><strong>Tel:</strong>  '.$reg[num_tel].'</td>
     <td><strong>Mun:</strong>  '.$reg[muni].'  <strong>Reg:</strong>  '.$reg[region].'</td>
   </tr>
   <tr>
-    <td><strong>Tel:</strong>  '.$reg[num_tel].' </td>
-    <td><strong>Conocido:</strong>  '.$reg[cono].' </td>
-  </tr>
-</table>
-<br>
-
-
-
-
-
-';}
-	else
-	{
-		$html = '
-
-	<table width="100%" border="1">
-  <tr>
-    <td colspan="2"><strong>Nombre:</strong>  '.$reg[nom_usr].' </td>
-        <td><strong>Referencia:</strong>  </td>
-    <td><strong>Asunto</strong>  </td>
-  </tr>
-  <tr>
-    <td><strong>No. Emp:</strong>  '.$reg[no_emp].'</td>
-    <td><strong></strong>'.$reg[esc].'</td>
-    <td rowspan="3" valign="top">'.$reg[refe].'</td>
-    <td rowspan="3" valign="top">'.$reg[asunto].'</td>
-  </tr>
-  <tr>
     <td><strong>Fideicomiso:</strong>  '.$reg[fide].' </td>
-    <td><strong></strong>  '.$reg[muni].'  <strong></strong>  '.$reg[region].'</td>
-  </tr>
-  <tr>
-    <td><strong>Tel:</strong>  '.$reg[num_tel].'</td>
     <td><strong>Conocido:</strong>  '.$reg[cono].' </td>
   </tr>
 </table>
@@ -154,7 +122,6 @@ $html = '
 
 
 ';
-	}
 
 // Print text using writeHTMLCell()
 $pdf->writeHTMLCell($w=0, $h=0, $x='', $y='', $html, $border=0, $ln=1, $fill=0, $reseth=true, $align='', $autopadding=true);

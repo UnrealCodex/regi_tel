@@ -116,8 +116,9 @@ select{
 		<input type="text" name="num_tel"><br>
 	Fideicomiso:<br>
 	<select name="fide" id="fide">
-	  <option value="F/18902">F/18902</option>
-	  <option value="F/18903">F/18903</option>
+		 <option value="-" selected="selected">-</option>
+	  <option value="EDUCACION">EDUCACION</option>
+	  <option value="SERV_PUB">SP</option>
 	</select><br>
 
 	Escuela:<br>
@@ -135,7 +136,8 @@ select{
 	  <option value="Si">Si</option>
 	  <option value="No">No</option>
 	</select>
-	<input type="submit">
+	<br>
+<input type="submit" value="Enviar">
 	</form>	
 		
 		</div>
