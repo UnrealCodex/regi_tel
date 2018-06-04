@@ -121,7 +121,7 @@ select{
 	  <option value="SERV_PUB">SP</option>
 	</select><br>
 
-	Escuela:<br>
+	Escuela o Dependencia:<br>
 		<input type="text" name="esc"><br>
 	Region:<br>
 		<input type="text" name="region"><br>

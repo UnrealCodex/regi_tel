@@ -134,7 +134,7 @@ $html = '
   </tr>
   <tr>
     <td><strong>No. Emp:</strong>  '.$reg[no_emp].'</td>
-    <td><strong></strong>'.$reg[esc].'</td>
+    <td><strong>Dependencia:</strong>'.$reg[esc].'</td>
     <td rowspan="3" valign="top">'.$reg[refe].'</td>
     <td rowspan="3" valign="top">'.$reg[asunto].'</td>
   </tr>
