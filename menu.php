@@ -29,6 +29,8 @@
 		<a href="sel_mod.php" class="btn btn-primary "  style="font-size: 32px">MODIFICAR</a><br><br>
 		
 		<a href="imprimir.php" class="btn btn-primary "  style="font-size: 32px">IMPRIMIR</a><br><br>
+			
+			<a href="ver_reg.php" class="btn btn-primary "  style="font-size: 32px">VER</a><br><br>
 
 		
 		

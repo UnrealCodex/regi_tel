@@ -16,10 +16,10 @@
 
 <body>
 	<div align="center">
-		<h1>REGISTROS TELEFONICOS</h1><br>
-	<a href="menu.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Menu</a><br><br>
+		<h1>REGISTROS POR DIA</h1><br>
+	<a href="ver_reg.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Fechas</a><br><br>
 <br>
-Fechas con Registros<br>
+<br>
 
 
 	<?php
@@ -116,7 +116,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 		
 		<br>
 <br>
-<a href="menu.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Menu</a><br><br>
+<a href="ver_reg.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Fechas</a><br><br>
 		
 	</div>
 </body>
