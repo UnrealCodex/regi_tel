@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Documento sin título</title>
+<title>Registro Exitoso</title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
@@ -72,7 +75,11 @@ mysqli_close($link);
 	
 	
 	?>
-	
-	
+	<div align="center">
+	<br>
+<br>
+
+	<a href="menu.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Menu</a><br><br>
+	</div>
 </body>
 </html>
