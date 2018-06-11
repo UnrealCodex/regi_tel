@@ -21,7 +21,7 @@
 <br>
 <br>
 
-
+ 
 	<?php
 	
 	require_once  'conexion.php'; //conexion a la BD

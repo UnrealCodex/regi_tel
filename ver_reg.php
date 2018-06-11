@@ -10,7 +10,7 @@
 
 <body>
 	<div align="center">
-		<h1>REGISTROS TELEFONICOS</h1><br>
+		<h1>VER REGISTROS TELEFONICOS</h1><br>
 	<a href="menu.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Menu</a><br><br>
 <br>
 Fechas con Registros<br>
