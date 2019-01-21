@@ -17,8 +17,15 @@
 
 <body>
 	<div align="center">
-		<h1>REGISTROS POR DIA</h1><br>
-	<a href="ver_reg_m.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Fechas</a><br><br>
+		<h1>REGISTRO</h1><br>
+		
+		
+		
+		
+		
+		
+		
+	<br><br>
 	  <h1><?php 
 		  
 		  
@@ -50,13 +57,15 @@ echo $dias[$d->format('w')]." ".$d->format('d')." de ".$meses[$d->format('n')-1]
 	<?php
 	
 	require_once  'conexion.php'; //conexion a la BD
-$query2       = sprintf("SELECT * FROM registro where fecha_reg = '$_REQUEST[fecha_reg]'");
+$query2       = sprintf("SELECT * FROM registro where int_fol = '$_REQUEST[int_fol]'");
 $result2      = @mysqli_query($link,$query2);
 //$rowAccount2  = @mysqli_fetch_array($result2);
 
 
 while($rowAccount2  = @mysqli_fetch_array($result2))
 {
+	echo ('<form action="contesta.php" method="post">');
+	echo ('<input type="hidden" name="int_fol" value="').$rowAccount2[int_fol].('">');
 	if($rowAccount2['fide'] == 'EDUCACION')
 	{
 	
@@ -95,15 +104,15 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
   <tr>
     <td>'.$rowAccount2[asunto].'</td>
   </tr>
-  <tr>
-    <td><strong>Respuesta</strong></td>
+
+	<tr>
+    <td><strong>Responder:</strong></td>
     </tr>
-   <tr>
-    <td>'.$rowAccount2[respuesta].'</td>
-    </tr>
-  <tr>
-    <td><a href="regxdia_indi.php?int_fol='.$rowAccount2[int_fol].'">Responder</a></td>
-    </tr>
+	<tr>
+	<td>
+	<textarea name="respuesta" style=" width:100%;">'.$rowAccount2[respuesta].'</textarea>  
+	</td>
+	</tr>
 </table></div>
 <br>
 	';
@@ -146,28 +155,30 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
   <tr>
     <td>'.$rowAccount2[asunto].'</td>
     </tr>
-	 <tr>
-    <td><strong>Respuesta</strong></td>
+	
+	<tr>
+    <td><strong>Responder:</strong></td>
     </tr>
-	 <tr>
-    <td>'.$rowAccount2[respuesta].'</td>
-    </tr>
-	 <tr>
-    <td><a href="regxdia_indi.php?int_fol='.$rowAccount2[int_fol].'">Responder</a></td>
-    </tr>
+	<tr>
+	<td>
+	<textarea name="respuesta" style=" width:100%;">'.$rowAccount2[respuesta].'</textarea>  
+	</td>
+	</tr>
 </table>
 </div>
 <br>'
 	;
-	
 	}
-	
-}
+
 	?>
 		
 		<br>
 <br>
-<a href="ver_reg_m.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Fechas</a><br><br>
+		<input type="submit" value="Enviar" ><br><br>
+		</form>
+<a href="http://www.emrgtechs.com/regi_tel/regxdia_m.php?fecha_reg=<?php echo $rowAccount2[fecha_reg] ; 	
+	
+}?>" class="btn btn-primary "  style="font-size: 22px">Regresar </a><br><br>
 		
 	</div>
 </body>
