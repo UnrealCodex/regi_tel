@@ -1,11 +1,11 @@
 <?php
 /////////////////////////
-$database   =  "fovileon_teldb";
-$username   =  "fovileon_teladm";
-$password   =  "789poiQWE,.-";
+$database   =  "abecode_teldb";
+$username   =  "abecode_fovi";
+$password   =  "789poiQWE";
 /////////////////////////
 
-$link  = mysqli_connect('localhost', $username, $password,$database);
+$link  = mysqli_connect('mysql3001.mochahost.com', $username, $password,$database);
 //$db    = mysqli_select_db($link);
 
 if (mysqli_connect_errno())

@@ -42,7 +42,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
       <td>'.$rowAccount2['fecha_reg'].'</td>
       <td>'.$rowAccount2['no_emp'].'</td>
       <td>'.$rowAccount2['nom_usr'].'</td>
-      <td><a style="font-size: 18px" href="http://www.fovileon.com/regi_tel/modi.php?int_fol='.$rowAccount2['int_fol'].'">Modificar</a></td>
+      <td><a style="font-size: 18px" href="http://www.emrgtechs.com/regi_tel/modi.php?int_fol='.$rowAccount2['int_fol'].'">Modificar</a></td>
     </tr>';
 	
 	

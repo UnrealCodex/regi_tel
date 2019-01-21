@@ -27,7 +27,7 @@ $result2      = @mysqli_query($link,$query2);
 while($rowAccount2  = @mysqli_fetch_array($result2))
 {
 	echo '<div> <a style="font-size: 18px" href="';
-	echo 'http://www.fovileon.com/regi_tel/tcpdf/examples/tel_fovi.php?fecha_reg=';
+	echo 'http://www.emrgtechs.com/regi_tel/tcpdf/examples/tel_fovi.php?fecha_reg=';
 	echo $rowAccount2['fecha_reg'].'"';
 	echo '>'.$rowAccount2['fecha_reg'].'<br></a></div>';
 }

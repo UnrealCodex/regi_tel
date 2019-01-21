@@ -31,7 +31,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 	
  $d = new DateTime( $rowAccount2['fecha_reg'] );
 	echo '<div> <a style="font-size: 18px" href="';
-	echo 'http://www.fovileon.com/regi_tel/regxdia_m.php?fecha_reg=';
+	echo 'http://www.emrgtechs.com/regi_tel/regxdia_m.php?fecha_reg=';
 	echo $rowAccount2['fecha_reg'].'">';
 	echo $dias[$d->format('w')]." ".$d->format('d')." de ".$meses[$d->format('n')-1]. " del ".date('Y') ;
 	echo '<br><br></a></div>';

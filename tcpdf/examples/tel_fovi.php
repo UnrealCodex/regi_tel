@@ -1,6 +1,6 @@
 <?php
-$conexion=mysql_connect("localhost","fovileon_teladm","789poiQWE,.-") or die("Problemas en la conexion");
-mysql_select_db("fovileon_teldb",$conexion) or die("Problemas en la seleccion de la base de datos");
+$conexion=mysql_connect("mysql3001.mochahost.com","abecode_fovi","789poiQWE") or die("Problemas en la conexion");
+mysql_select_db("abecode_teldb",$conexion) or die("Problemas en la seleccion de la base de datos");
 $registros=mysql_query("SELECT * FROM registro WHERE fecha_reg = '$_REQUEST[fecha_reg]'" , $conexion) or die("Problemas en el select:".mysql_error());
 
 
