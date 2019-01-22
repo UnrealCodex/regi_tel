@@ -17,8 +17,8 @@
 
 <body>
 	<div align="center">
-		<h1>REGISTROS POR DIA</h1><br>
-	<a href="ver_reg_m.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Fechas</a><br><br>
+		<br>
+		<a href="ver_reg_m.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Fechas</a><br><br>
 	  <h1><?php 
 		  
 		  
@@ -43,7 +43,6 @@ echo $dias[$d->format('w')]." ".$d->format('d')." de ".$meses[$d->format('n')-1]
 			
 			
 			//echo $_REQUEST['fecha_reg'];?></h1>
-<br>
 <br>
 
  
@@ -102,7 +101,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
     <td>'.$rowAccount2[respuesta].'</td>
     </tr>
   <tr>
-    <td><a href="regxdia_indi.php?int_fol='.$rowAccount2[int_fol].'">Responder</a></td>
+    <td><a style="color:red;font-size:18px" href="regxdia_indi.php?int_fol='.$rowAccount2[int_fol].'">Responder/Cambiar</a></td>
     </tr>
 </table></div>
 <br>
@@ -153,7 +152,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
     <td>'.$rowAccount2[respuesta].'</td>
     </tr>
 	 <tr>
-    <td><a href="regxdia_indi.php?int_fol='.$rowAccount2[int_fol].'">Responder</a></td>
+    <td><a style="color:red;font-size:18px" href="regxdia_indi.php?int_fol='.$rowAccount2[int_fol].'">Responder/Cambiar</a></td>
     </tr>
 </table>
 </div>
@@ -169,6 +168,6 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 <br>
 <a href="ver_reg_m.php" class="btn btn-primary "  style="font-size: 22px">Regresar a Fechas</a><br><br>
 		
-	</div>
+</div>
 </body>
 </html>

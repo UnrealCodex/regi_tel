@@ -20,12 +20,13 @@
       <td>Fecha</td>
       <td>No Empleado</td>
       <td>Nombre</td>
+	  <td>Respuesta</td>
       <td>Info</td>
     </tr>
 	<?php
 	
 	require_once  'conexion.php'; //conexion a la BD
-$query2       = sprintf("SELECT * FROM registro GROUP BY int_fol DESC");
+$query2       = sprintf("SELECT * FROM registro GROUP BY int_fol DESC ORDER BY fecha_reg DESC");
 $result2      = @mysqli_query($link,$query2);
 //$rowAccount2  = @mysqli_fetch_array($result2);
 
@@ -42,6 +43,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
       <td>'.$rowAccount2['fecha_reg'].'</td>
       <td>'.$rowAccount2['no_emp'].'</td>
       <td>'.$rowAccount2['nom_usr'].'</td>
+	  <td>'.$rowAccount2['respuesta'].'</td>
       <td><a style="font-size: 18px" href="http://www.emrgtechs.com/regi_tel/modi.php?int_fol='.$rowAccount2['int_fol'].'">Modificar</a></td>
     </tr>';
 	

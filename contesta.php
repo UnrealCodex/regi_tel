@@ -17,8 +17,7 @@
 
 <body>
 	<div align="center">
-		<h1>REGISTRO</h1><br>
-	;	
+			
 <?php
 require_once  'conexion.php'; //conexion a la BD
 //	$reg_by = $_REQUEST['reg_by'];
@@ -33,7 +32,7 @@ require_once  'conexion.php'; //conexion a la BD
 	?>	
 		
 		
-	<br><br>
+	
 	  <h1><?php 
 		  
 		  
@@ -58,7 +57,6 @@ echo $dias[$d->format('w')]." ".$d->format('d')." de ".$meses[$d->format('n')-1]
 			
 			
 			//echo $_REQUEST['fecha_reg'];?></h1>
-<br>
 <br>
 
  
@@ -180,9 +178,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 
 	?>
 		
-		<br>
-<br>
-		<br><br>
+
 		</form>
 <a href="http://www.emrgtechs.com/regi_tel/regxdia_m.php?fecha_reg=<?php echo $rowAccount2[fecha_reg] ; 	
 	

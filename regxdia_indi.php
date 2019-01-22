@@ -17,15 +17,7 @@
 
 <body>
 	<div align="center">
-		<h1>REGISTRO</h1><br>
-		
-		
-		
-		
-		
-		
-		
-	<br><br>
+	<br>
 	  <h1><?php 
 		  
 		  
@@ -51,7 +43,6 @@ echo $dias[$d->format('w')]." ".$d->format('d')." de ".$meses[$d->format('n')-1]
 			
 			//echo $_REQUEST['fecha_reg'];?></h1>
 <br>
-<br>
 
  
 	<?php
@@ -71,6 +62,14 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 	
 	echo 	'<div style="background-color: #CCFD9A ; border-radius: 25px; padding: 30px; width:100%">
 	<table width="100%" border="0" >
+		<tr>
+    <td><strong>Responder:</strong></td>
+    </tr>
+	<tr>
+	<td>
+	<textarea name="respuesta" style=" width:100%;">'.$rowAccount2[respuesta].'</textarea>  
+	</td>
+	</tr>
   <tr>
     <td><strong>Nombre:</strong>  '.$rowAccount2[nom_usr].' </td>
   </tr>
@@ -105,14 +104,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
     <td>'.$rowAccount2[asunto].'</td>
   </tr>
 
-	<tr>
-    <td><strong>Responder:</strong></td>
-    </tr>
-	<tr>
-	<td>
-	<textarea name="respuesta" style=" width:100%;">'.$rowAccount2[respuesta].'</textarea>  
-	</td>
-	</tr>
+
 </table></div>
 <br>
 	';
@@ -122,6 +114,15 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 		
 		echo '<div style="background-color: #C1F9FF ; border-radius: 25px; padding: 30px; width:100%">
 		<table width="100%" border="0">
+			
+	<tr>
+    <td><strong>Responder:</strong></td>
+    </tr>
+	<tr>
+	<td>
+	<textarea name="respuesta" style=" width:100%;">'.$rowAccount2[respuesta].'</textarea>  
+	</td>
+	</tr>
   <tr>
     <td><strong>Nombre:</strong>  '.$rowAccount2[nom_usr].' </td>
       </tr>
@@ -155,15 +156,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
   <tr>
     <td>'.$rowAccount2[asunto].'</td>
     </tr>
-	
-	<tr>
-    <td><strong>Responder:</strong></td>
-    </tr>
-	<tr>
-	<td>
-	<textarea name="respuesta" style=" width:100%;">'.$rowAccount2[respuesta].'</textarea>  
-	</td>
-	</tr>
+
 </table>
 </div>
 <br>'
@@ -172,9 +165,8 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 
 	?>
 		
-		<br>
-<br>
-		<input type="submit" value="Enviar" ><br><br>
+
+		<input type="submit" value="Enviar" class="btn btn-primary " ><br><br>
 		</form>
 <a href="http://www.emrgtechs.com/regi_tel/regxdia_m.php?fecha_reg=<?php echo $rowAccount2[fecha_reg] ; 	
 	
