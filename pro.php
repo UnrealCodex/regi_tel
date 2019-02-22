@@ -12,6 +12,7 @@
 	
 	
 	<?php
+
 require_once  'conexion.php'; //conexion a la BD
 //	$reg_by = $_REQUEST['reg_by'];
 //	$page_stat = $_REQUEST['page_stat'];	
@@ -29,9 +30,8 @@ require_once  'conexion.php'; //conexion a la BD
 	$refe = $_POST['refe'];
 	$fide = $_POST['fide'];
 	$cono = $_POST['cono'];
-	
-	
-	
+    $hora = date("h:i a");
+
 	
 	
 	
@@ -41,6 +41,7 @@ require_once  'conexion.php'; //conexion a la BD
 
 mysqli_query($link , "insert into registro (
 reg_by,
+hora,
 fecha_reg,
 nom_usr,
 no_emp,
@@ -54,6 +55,7 @@ fide,
 cono
 ) values (
 '".$reg_by."',
+'".$hora."',
 '".$fecha_reg."',
 '".$nom_usr."',
 '".$no_emp."',
