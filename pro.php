@@ -30,6 +30,7 @@ require_once  'conexion.php'; //conexion a la BD
 	$refe = $_POST['refe'];
 	$fide = $_POST['fide'];
 	$cono = $_POST['cono'];
+	date_default_timezone_set('America/Mexico_City');
     $hora = date("h:i a");
 
 	

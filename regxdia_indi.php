@@ -71,7 +71,7 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 	</td>
 	</tr>
 	 <tr>
-    <td><strong>Nombre:</strong>  '.$rowAccount2[hora].' </td>
+    <td><strong>Hora registro:</strong>  '.$rowAccount2[hora].' </td>
   </tr>
   <tr>
     <td><strong>Nombre:</strong>  '.$rowAccount2[nom_usr].' </td>
@@ -126,6 +126,9 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 	<textarea name="respuesta" style=" width:100%;">'.$rowAccount2[respuesta].'</textarea>  
 	</td>
 	</tr>
+	 <tr>
+    <td><strong>Hora registro:</strong>  '.$rowAccount2[hora].' </td>
+  </tr>
   <tr>
     <td><strong>Nombre:</strong>  '.$rowAccount2[nom_usr].' </td>
       </tr>
