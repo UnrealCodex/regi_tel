@@ -115,6 +115,9 @@ while($rowAccount2  = @mysqli_fetch_array($result2))
 		
 		echo '<div style="background-color: #C1F9FF ; border-radius: 25px; padding: 30px; width:100%">
 		<table width="100%" border="0">
+		<tr>
+    <td><strong>Hora de registro:</strong>  '.$rowAccount2[hora].' </td>
+  </tr>
   <tr>
     <td><strong>Nombre:</strong>  '.$rowAccount2[nom_usr].' </td>
       </tr>
